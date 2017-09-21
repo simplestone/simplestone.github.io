@@ -71,17 +71,25 @@
 
 <ul>
 <li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></li>
-<li>git submodule</li>
-<li><a href="http://ohgyun.com/711">http://ohgyun.com/711</a></li>
-<li><a href="https://stackoverflow.com/a/5814351">https://stackoverflow.com/a/5814351</a></li>
-<li><a href="https://stackoverflow.com/a/36375256">https://stackoverflow.com/a/36375256</a></li>
+<li><del>git submodule</del>
+
+<ul>
+<li><del><a href="http://ohgyun.com/711">http://ohgyun.com/711</a></del></li>
+<li><del><a href="https://stackoverflow.com/a/5814351">https://stackoverflow.com/a/5814351</a></del></li>
+<li><del><a href="https://stackoverflow.com/a/36375256">https://stackoverflow.com/a/36375256</a></del></li>
+</ul></li>
+<li>publishDir 변경
+
+<ul>
+<li>gitpage 프로젝트와 같은 레벨에 <code>&lt;username&gt;</code>.github.io 페이지를 두고 그 쪽으로 발행이 되도록 수정</li>
+</ul></li>
 </ul></li>
 </ul>
 
 <h2 id="새로운-글을-쓸때">새로운 글을 쓸때</h2>
 
 <pre><code>gitpages 에서 new post를 한다
-페이지 테스트 되면, hugo를 실행하여 public으로 발행한다
+페이지 테스트 되면, hugo를 실행하여 publishDir로 발행한다
 </code></pre>
 
 <ul>
@@ -94,11 +102,13 @@
 <li>git commands
 
 <ul>
-<li><code>&lt;submodule&gt;</code> add / commit</li>
-<li><code>&lt;parent&gt;</code> add -A / commit / push <code>&lt;origin&gt;</code> <code>&lt;branch&gt;</code></li>
-<li><code>&lt;parent&gt;</code> submodule update <code>--</code>remote</li>
-<li><code>&lt;submodule&gt;</code> checkout <code>&lt;branch&gt;</code></li>
-<li><code>&lt;submodule&gt;</code> push <code>&lt;origin&gt;</code> <code>&lt;branch&gt;</code></li>
+<li><code>&lt;username.github.io&gt;</code> add -A / commit / push</li>
+<li><code>&lt;parent&gt;</code> add -A / commit / push</li>
+<li><del><code>&lt;submodule&gt;</code> add / commit</del></li>
+<li><del><code>&lt;parent&gt;</code> add -A / commit / push <code>&lt;origin&gt;</code> <code>&lt;branch&gt;</code></del></li>
+<li><del><code>&lt;parent&gt;</code> submodule update <code>--</code>remote</del></li>
+<li><del><code>&lt;submodule&gt;</code> checkout <code>&lt;branch&gt;</code></del></li>
+<li><del><code>&lt;submodule&gt;</code> push <code>&lt;origin&gt;</code> <code>&lt;branch&gt;</code></del></li>
 </ul></li>
 </ul>
 
