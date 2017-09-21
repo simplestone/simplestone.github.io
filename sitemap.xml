@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://simplestone.github.io/post/kafka_%EA%B0%84%EB%9E%B5%EC%A0%95%EB%A6%AC/</loc>
+    <lastmod>2017-09-19T15:13:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplestone.github.io/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%EC%8D%A8%EC%95%BC%EA%B2%A0%EB%8B%A8_%EC%83%9D%EA%B0%81/</loc>
+    <lastmod>2017-09-18T15:02:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplestone.github.io/post/%ED%9C%B4%EA%B3%A0%EB%A5%BC_%EC%84%A0%ED%83%9D%ED%95%9C_%EC%9D%B4%EC%9C%A0/</loc>
+    <lastmod>2017-09-18T13:53:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplestone.github.io/post/gitpage-with-hugo/</loc>
+    <lastmod>2017-09-17T00:28:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplestone.github.io/post/my-first-post/</loc>
+    <lastmod>2017-09-16T17:50:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplestone.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplestone.github.io/post/</loc>
+    <lastmod>2017-09-19T15:13:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplestone.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplestone.github.io/</loc>
+    <lastmod>2017-09-19T15:13:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

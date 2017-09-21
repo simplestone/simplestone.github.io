@@ -1,0 +1,118 @@
+<body>
+  <!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="kafka 간략정리 - simplestone" property="og:title">
+<title>kafka 간략정리 | simplestone</title>
+<link rel="stylesheet" href="https://simplestone.github.io//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+
+
+  <section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://simplestone.github.io//"><h1 class="title is-4">simplestone</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle is-6">September 19, 2017</h2>
+      <h1 class="title">kafka 간략정리</h1>
+      
+      <div class="content">
+        
+
+<p>팀내 다른 프로젝트에서 <a href="https://kafka.apache.org/">kafka</a>를 쓰고 있고, 대부분의 메시징 시스템에서 사용하고 있어 가볍게 정리하고자 남긴다.</p>
+
+<h2 id="kafka란-무엇인가">kafka란 무엇인가?</h2>
+
+<p>비동기 처리를 위한 메시징 큐의 한 종류.</p>
+
+<h2 id="producer">producer</h2>
+
+<ul>
+<li>topic에 대한 메시지 생성.</li>
+<li>acks : producer가 메시지를 보내고 kafka가 잘 받았는지 확인을 할 것인지 안 할 것인지의 옵션 값.</li>
+</ul>
+
+<h2 id="consumer">consumer</h2>
+
+<ul>
+<li>구독한 topic에 대해 처리.</li>
+<li>consumer group : consumer instance들을 대표하는 그룹.
+
+<ul>
+<li>사용하는 이유
+
+<ul>
+<li>그룹 내 한 서버(instance)의 장애상황에서도 그룹 내 다른 instance가 동작함으로 안정성 확보를 할 수 있다.</li>
+<li>그룹별로 offset을 관리하기 때문에, 동일한 토픽에 대해 데이터 손실이 없다.</li>
+<li>하나의 파티션에 대해 consumer group내 하나의 consumer instance만 접근할 수 있다.</li>
+</ul></li>
+</ul></li>
+<li>consumer instance : 하나의 프로세스 또는 하나의 서버.</li>
+<li>offset : 파티션안에 데이터 위치를 유니크한 숫자로 표시한 것. consumer는 자신이 어디까지 데이터를 가져갔는지 offset을 이용해서 관리한다.</li>
+</ul>
+
+<h2 id="broker">broker</h2>
+
+<ul>
+<li>메시지 큐.</li>
+<li>topic
+
+<ul>
+<li>보관주기는 기본 1주일.</li>
+</ul></li>
+<li>파티션이 2개 이상일경우, consumer가 가져가는 순서는 보장되지 않는다.</li>
+<li>replication factor
+
+<ul>
+<li>partition을 복제하여 클러스터에 분산시킨다.</li>
+<li>leader/follower가 존재 하며, 누구나 leader가 될 수 있다.</li>
+<li>leader에서만 read/write가 일어난다.</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<ul>
+<li>kafka quickstart : <a href="https://kafka.apache.org/quickstart">https://kafka.apache.org/quickstart</a></li>
+<li>epicdevs님 블로그 : <a href="http://epicdevs.com/tag/kafka">http://epicdevs.com/tag/kafka</a><br /></li>
+<li>고승범님 브런치 : <a href="https://brunch.co.kr/keyword/Kafka">https://brunch.co.kr/keyword/Kafka</a></li>
+</ul>
+</blockquote>
+
+<h2 id="간단-예제로-테스트">간단 예제로 테스트</h2>
+
+<ul>
+<li><a href="https://github.com/simplestone/kafka-spring">https://github.com/simplestone/kafka-spring</a></li>
+</ul>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>

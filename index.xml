@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>simplestone</title>
+    <link>https://simplestone.github.io/</link>
+    <description>Recent content on simplestone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 19 Sep 2017 15:13:01 +0900</lastBuildDate>
+    
+	<atom:link href="https://simplestone.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kafka 간략정리</title>
+      <link>https://simplestone.github.io/post/kafka_%EA%B0%84%EB%9E%B5%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Tue, 19 Sep 2017 15:13:01 +0900</pubDate>
+      
+      <guid>https://simplestone.github.io/post/kafka_%EA%B0%84%EB%9E%B5%EC%A0%95%EB%A6%AC/</guid>
+      <description>팀내 다른 프로젝트에서 kafka를 쓰고 있고, 대부분의 메시징 시스템에서 사용하고 있어 가볍게 정리하고자 남긴다.
+kafka란 무엇인가? 비동기 처리를 위한 메시징 큐의 한 종류.
+producer  topic에 대한 메시지 생성. acks : producer가 메시지를 보내고 kafka가 잘 받았는지 확인을 할 것인지 안 할 것인지의 옵션 값.  consumer  구독한 topic에 대해 처리. consumer group : consumer instance들을 대표하는 그룹.  사용하는 이유  그룹 내 한 서버(instance)의 장애상황에서도 그룹 내 다른 instance가 동작함으로 안정성 확보를 할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>블로그를 써야겠단 생각</title>
+      <link>https://simplestone.github.io/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%EC%8D%A8%EC%95%BC%EA%B2%A0%EB%8B%A8_%EC%83%9D%EA%B0%81/</link>
+      <pubDate>Mon, 18 Sep 2017 15:02:29 +0900</pubDate>
+      
+      <guid>https://simplestone.github.io/post/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%EC%8D%A8%EC%95%BC%EA%B2%A0%EB%8B%A8_%EC%83%9D%EA%B0%81/</guid>
+      <description>블로그를 써야겠다는 생각을 한 이유가 무엇일까 ?
+ 잡생각이 많다. 잘 까먹는다. 언젠가 생각했던 기억을 잘 까먹어서, 계속 머리속을 맴 돌 때가 있다. 즉, 그 시점에 내가 누구였는지 스냅샷을 찍어놓기 위함이고, 어느 곳으로의 방향성을 가지는지 알고 있기 위함이다.  </description>
+    </item>
+    
+    <item>
+      <title>휴고를 선택한 이유</title>
+      <link>https://simplestone.github.io/post/%ED%9C%B4%EA%B3%A0%EB%A5%BC_%EC%84%A0%ED%83%9D%ED%95%9C_%EC%9D%B4%EC%9C%A0/</link>
+      <pubDate>Mon, 18 Sep 2017 13:53:26 +0900</pubDate>
+      
+      <guid>https://simplestone.github.io/post/%ED%9C%B4%EA%B3%A0%EB%A5%BC_%EC%84%A0%ED%83%9D%ED%95%9C_%EC%9D%B4%EC%9C%A0/</guid>
+      <description>페이지를 간편하게 꾸렸으면 좋겠다 마크다운 문법을 사용할 수 있으면 좋겠다 내용에 집중 할 수 있으면 좋겠다  어쩌면 마크다운을 사용한다는 것 자체가 내용에 집중할 수 있게 해주기 때문에 같은 이유가 될 수 있겠다.
+내용에 집중 했으면 미리보기 및 배포가 용이해야하는데, 첫 포스트 배포가 큰 이슈없이 되는 것으로 매우 만족하였다.
+휴고에 대한 문법공부도 있는데 일단 컨텐츠를 쌓아 나가면서 고민해보고자 더 큰 고민은 하지 않았다. 어짜피 배울것 투성이니.</description>
+    </item>
+    
+    <item>
+      <title>Gitpage With Hugo</title>
+      <link>https://simplestone.github.io/post/gitpage-with-hugo/</link>
+      <pubDate>Sun, 17 Sep 2017 00:28:03 +0900</pubDate>
+      
+      <guid>https://simplestone.github.io/post/gitpage-with-hugo/</guid>
+      <description>github / pages  github 계정 만들기  https://github.com/  github page 용 repo 만들기, hello 생성  https://pages.github.com/   hugo  hugo 설치  https://gohugo.io/getting-started/installing/ https://gohugo.io/getting-started/quick-start/ https://gohugo.io/themes/installing-and-using-themes/ https://themes.gohugo.io https://gitlab.com/beli3ver/hemingway2   hugo on github  hugo / host on github  https://gohugo.io/hosting-and-deployment/hosting-on-github/ git submodule http://ohgyun.com/711 https://stackoverflow.com/a/5814351 https://stackoverflow.com/a/36375256   새로운 글을 쓸때 gitpages 에서 new post를 한다 페이지 테스트 되면, hugo를 실행하여 public으로 발행한다   hugo commands  &amp;lt;parent&amp;gt; hugo new &amp;lt;post&amp;gt;/new-post-title.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://simplestone.github.io/post/my-first-post/</link>
+      <pubDate>Sat, 16 Sep 2017 17:50:22 +0900</pubDate>
+      
+      <guid>https://simplestone.github.io/post/my-first-post/</guid>
+      <description>simplestone</description>
+    </item>
+    
+  </channel>
+</rss>
